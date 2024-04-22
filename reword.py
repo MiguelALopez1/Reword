@@ -18,6 +18,18 @@ async def on_message(message):
     if message.author == client.user:
         return
 
+    if message.content.startswith('$help') or message.content.startswith('$h'):
+        help_message = (
+            "# Bot Command List:\n"
+            "**$ask [question]**: Ask a question. The bot will post your question for others to see and vote on.\n"
+            "**$list**: Lists all the questions sorted by their net votes (upvotes minus downvotes).\n"
+            "**$answer [question ID] [answer]**: Provide an answer to a specific question using its ID from the **$list** command.\n"
+            "**$answers [question ID]**: Lists all answers for a specific question, sorted by their net votes.\n"
+            "React with 👍 or 👎 to vote on questions and answers."
+        )
+        await message.channel.send(help_message)
+        return
+
     if message.content.startswith('$ask'):
         question = message.content[len('$ask '):]
         msg = await message.channel.send(f"**{message.author} asked:** *{question}*")
@@ -130,4 +142,4 @@ async def on_reaction_remove(reaction, user):
                 elif str(reaction.emoji) == '👎':
                     answer['downvotes'] -= 1
 
-client.run('key here lol')
+client.run('key here')
