@@ -2,7 +2,7 @@
 ### Overview
 The Reword Discord Bot is designed to improve communication and participation in team settings where motivation is lacking. It addresses the problem by tracking user participation in discussions and rewarding positive behaviors. Key features of the bot include determining and adding scores based on user participation, notifying users of rewards, and providing statistics on participation.
 
-To enhance communication and teamwork, the bot encourages users to interact informally, thus reducing barriers posed by more formal settings. The bot supports commands like $ask, $list, $answer, and reacts to user interactions like adding or removing reactions to messages.
+To enhance communication and teamwork, the bot encourages users to interact informally, thus reducing barriers posed by more formal settings. The bot supports commands like `$help`, `$ask`, `$list`, `$answer`,`$answers` and reacts to user interactions like adding or removing reactions to messages.
 
 The bot incorporates concepts such as requirement elicitation through brainstorming and prototyping, user stories, process metrics, and UI design. It avoids approaches like interviewing, ethnography, and other less relevant methods like Git branching and sprint planning.
 
